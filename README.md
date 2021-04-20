@@ -9,8 +9,7 @@ average grade for the next exams.
 <img src="/docs/Overall.png" width="600" height="400">
 
 ## Second view
-The second view illustrates the grades of the student for each semester. Additionally it computes the average grade for each semester. This view allows to add additional
-grades into the database after the name of the course (Module), the grade, the ECTS and the semester have been entered.
+The second view illustrates the grades of the student for each semester. Additionally it computes the average grade for each semester. This view allows to add additional grades into the database after the name of the course (Module), the grade, the ECTS and the semester have been entered.
 <img src="/docs/Grades.png" width="600" height="400">
 
 ## Third view
