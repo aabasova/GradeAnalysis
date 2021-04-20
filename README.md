@@ -1,5 +1,5 @@
 # GradeAnalysis
-This repository contains a JAVAFX project for managing university grades. The data for the written exams are saved inside a database. 
+This repository contains a JAVAFX project for illustrating and analyzing academic grades. The data for the written exams are stored in a database. 
 The project contains three main views.
 
 ## First view
