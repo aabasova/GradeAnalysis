@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="1021.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.GradesController"> 
+   <children>
+      <MenuBar layoutX="1.0" layoutY="10.0" prefHeight="29.0" prefWidth="1029.0">
+         <menus>
+            <Menu fx:id="menuOverall" mnemonicParsing="false" onAction="#openOverall" text="Overall">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#openOverall" text="Open overall" />
+               </items></Menu>
+            <Menu fx:id="menuGrades" mnemonicParsing="false" onAction="#openGrades" text="Grades" />
+            <Menu fx:id="menuAnalysis" mnemonicParsing="false" onAction="#openAnalysis" text="Analysis" />
+         </menus>
+      </MenuBar>
+      <AnchorPane fx:id="anchorPaneModules" layoutX="-3.0" layoutY="40.0" maxHeight="-1.0" maxWidth="-1.0" prefHeight="542.0" prefWidth="1023.0">
+         <children>
+            <GridPane alignment="CENTER" layoutX="75.0" layoutY="23.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="67.0" prefWidth="726.0" style="-fx-border-color: black;">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.39517211914062" minWidth="10.0" prefWidth="183.69757080078125" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="179.30242919921875" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="35.43256378173828" minHeight="0.0" prefHeight="31.81085968017578" valignment="CENTER" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="28.18914031982422" valignment="CENTER" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="Module" />
+                  <TextField fx:id="textfieldModuleName" GridPane.rowIndex="1" />
+                  <TextField fx:id="textfieldECTS" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label text="Grade" GridPane.columnIndex="1" />
+                  <Label text="ECTS" GridPane.columnIndex="2" />
+                  <Label text="Semester" GridPane.columnIndex="3" />
+                  <ComboBox fx:id="comboboxSemeser" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="combobocGrade" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <cursor>
+                  <Cursor fx:constant="MOVE" />
+               </cursor>
+            </GridPane>
+            <Button fx:id="buttonAddModule" layoutX="845.0" layoutY="38.0" mnemonicParsing="false" onAction="#addModule" prefHeight="27.0" prefWidth="72.0" text="Add" />
+            <ScrollPane fx:id="scrollpane" layoutX="64.0" layoutY="124.0" prefHeight="266.0" prefWidth="892.0" vbarPolicy="ALWAYS">
+               <content>
+                  <VBox fx:id="vbox" prefHeight="251.0" prefWidth="879.0" scaleShape="false" spacing="20.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

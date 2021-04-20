@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="629.0" prefWidth="898.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MainViewController">
+   <children>
+      <Button fx:id="buttonOverall" layoutX="54.0" layoutY="33.0" mnemonicParsing="false" onAction="#openOverall" prefHeight="27.0" prefWidth="108.0" text="Overall" />
+      <Button fx:id="buttonGrades" layoutX="204.0" layoutY="33.0" mnemonicParsing="false" onAction="#openGrades" prefHeight="27.0" prefWidth="102.0" text="Grades" />
+      <Button fx:id="buttonAnalysis" layoutX="353.0" layoutY="33.0" mnemonicParsing="false" onAction="#openAnalysis" prefHeight="27.0" prefWidth="100.0" text="Analysis" />
+      <GridPane layoutX="91.0" layoutY="128.0" prefHeight="289.0" prefWidth="538.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="ECTS completed" />
+            <Label fx:id="labelECTS" GridPane.columnIndex="1" />
+            <Label text="Average" GridPane.rowIndex="1" />
+            <Label fx:id="labelAverageGrade" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Best possible grade" GridPane.rowIndex="2" />
+            <Label fx:id="labelBestPossibleGrade" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Goal grade" GridPane.rowIndex="3" />
+            <TextField fx:id="textfieldGoalGrade" onAction="#computeNeededAverage" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Needed Average for the left exams" GridPane.rowIndex="4" />
+            <Label fx:id="labelNeededAverageGrade" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

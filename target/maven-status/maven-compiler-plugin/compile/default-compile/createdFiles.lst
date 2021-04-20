@@ -1,0 +1,12 @@
+gui/TableView.class
+main/App.class
+gui/Controller.class
+gui/GradesController.class
+gui/MainViewController.class
+db/Database.class
+gui/AnalysisController.class
+data/Module.class
+main/PrimaryController.class
+db/DBManager.class
+main/SecondaryController.class
+gui/ModuleData.class

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AnalysisController">
+   <children>
+      <BarChart fx:id="barchart" layoutX="10.0" layoutY="118.0" onMouseEntered="#mouseBar" prefHeight="256.0" prefWidth="576.0">
+        <xAxis>
+          <CategoryAxis fx:id="barchartX" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="barchartY" side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <HBox layoutX="72.0" layoutY="22.0" prefHeight="55.0" prefWidth="432.0" spacing="50.0">
+         <children>
+            <Label text="Total exams" />
+            <Label fx:id="examsLabel" text="Label" />
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

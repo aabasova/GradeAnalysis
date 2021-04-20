@@ -1,0 +1,34 @@
+
+.anchorpane{
+    -fx-background-color: 
+        linear-gradient(to top right , #F77F00 50%, #FCBF49 100%);
+}
+
+.anchorpane2{
+     -fx-background-color: 
+        linear-gradient(to top right , #F77F00 50%, #FCBF49 100%);
+}
+
+.button{
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width: 3;
+    -fx-background-color: #004777;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: white; 
+    -fx-background-size:  contain;
+    -fx-background-position: right center;
+    -fx-background-repeat: no-repeat;
+}
+
+.label{
+     -fx-text-fill: #004777;
+     -fx-font-size: 20;
+}
+
+.onHover{
+    -fx-background-color: ORANGE;
+}
+.button-entered{
+    
+}
