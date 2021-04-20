@@ -3,7 +3,7 @@ This repository contains a JAVAFX project for illustrating and analyzing academi
 The project contains three main views.
 
 ## First view
-The first view contains the progress of the academic degree. It contains a circle chart illustrating the completed ECTS for the studies degree. Additionally the current average grade and the best possible grade are computed. In case the student enters a target grade, then the system will compute the needed
+The first view contains the progress of the academic degree. It contains a circle chart illustrating the completed ECTS. Additionally the current average grade and the best possible grade are computed. In case the student enters a target grade, then the system will compute the needed
 average grade for the next exams.
 <img src="/docs/Overall.png" width="600" height="400">
 
